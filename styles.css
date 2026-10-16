@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#111210;--teal:#1b2a30;--cream:#f3f0e8;--muted:#b8b6ad;--line:#f3f0e826;--yellow:#f4c900;--panel:#191a17e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--ink);color:var(--cream);font:15px/1.7 'DM Sans',Arial,sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{width:min(1080px,calc(100% - 44px));margin-inline:auto}
+.background,.shade{position:fixed;inset:0;pointer-events:none}.background{z-index:-2;background:linear-gradient(140deg,#1b2a30 0%,#20251f 50%,#111210 100%)}.shade{z-index:-1;background:linear-gradient(180deg,#1112102b,#111210b8 55%,#111210f2)}
+.header{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.brand img{width:190px;height:54px;object-fit:contain;object-position:left center}.header nav{display:flex;gap:28px;font-size:12px;color:#d8d5cc}.header a:hover,.text-link:hover,.footer a:hover{color:var(--yellow)}.header-social{font-size:12px;font-weight:700}.header-social span{color:var(--yellow)}
+.eyebrow{margin:0 0 13px;color:var(--yellow);font-size:10px;font-weight:700;letter-spacing:.17em}.hero{min-height:515px;padding-top:103px;padding-bottom:40px;display:flex;flex-direction:column;align-items:flex-start}.hero .eyebrow span{display:inline-block;width:6px;height:6px;background:var(--yellow);border-radius:50%;margin-right:8px;vertical-align:1px}h1,h2,h3{font-family:Manrope,'DM Sans',sans-serif;line-height:1.1;letter-spacing:-.05em}h1{font-size:clamp(52px,8vw,88px);font-weight:600;margin:0 0 20px}h1 em{color:var(--yellow);font-style:normal}.intro{max-width:460px;color:#d0cec6;font-size:14px;line-height:1.9}.actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap;margin-top:18px}.button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:46px;padding:0 19px;font-size:12px;font-weight:700;border:1px solid transparent;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}.button-light{background:var(--cream);color:#171813}.button-yellow{background:var(--yellow);color:#171813}.button-outline{border-color:var(--line)}.text-link{font-size:12px;font-weight:700}.hero-bottom{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:65px}.hero-bottom span{height:1px;width:36px;background:var(--yellow)}.hero-bottom p{margin:0;color:#b6b3a8;font-size:9px;letter-spacing:.17em}
+.music-section{padding-top:45px;padding-bottom:75px}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:25px}.section-heading h2,.platforms-section h2{font-size:clamp(28px,4vw,40px);margin:0}.section-description{max-width:300px;color:var(--muted);font-size:12px;line-height:1.8;margin:0}.panel{background:var(--panel);border:1px solid var(--line);backdrop-filter:blur(12px)}.featured{display:grid;grid-template-columns:1fr 1fr;overflow:hidden}.featured-cover{position:relative;min-height:340px;background:#1b2a30}.featured-cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.cover-tag{position:absolute;bottom:13px;left:13px;padding:5px 9px;background:#111210c9;font-size:8px;letter-spacing:.15em}.featured-info{padding:clamp(25px,5vw,52px);align-self:center}.featured-info h3{font-size:clamp(30px,4vw,43px);margin:0 0 12px}.muted{color:var(--muted);font-size:13px;line-height:1.85}.tags{display:flex;gap:8px;margin:19px 0 23px}.tags span{padding:4px 9px;border:1px solid var(--line);font-size:9px;color:#d0cec6}.song-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.song-card{padding:12px}.song-cover{position:relative;display:block;overflow:hidden;aspect-ratio:1.25;background:#1b2a30}.song-cover img{width:100%;height:100%;object-fit:cover;transition:transform .35s}.song-cover:hover img{transform:scale(1.025)}.song-details{display:flex;justify-content:space-between;align-items:center;margin:16px 4px 0}.song-label{font-size:9px;letter-spacing:.16em;color:var(--yellow);margin:0 0 5px}.song-details h3{font-size:21px;margin:0}.number{font-size:11px;color:#77766d}.small{font-size:11px;margin:6px 4px 4px}
+.platforms-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:start;padding-top:28px;padding-bottom:90px}.platform-list{border-top:1px solid var(--line)}.platform-list a{display:flex;align-items:center;justify-content:space-between;padding:17px 2px;border-bottom:1px solid var(--line);font-size:14px;font-weight:600;transition:color .2s}.platform-list a span:last-child{color:var(--yellow)}.platform-list a:hover{color:var(--yellow)}
+.contact-section{position:relative;overflow:hidden;display:flex;align-items:center;min-height:320px;padding:clamp(28px,6vw,60px);background:linear-gradient(120deg,#202c30,#20211c);border:1px solid var(--line)}.contact-copy{position:relative;z-index:1;max-width:570px}.contact-copy h2{font-size:clamp(42px,6vw,65px);margin:0 0 12px}.contact-copy>.muted{max-width:410px}.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.contact-details{display:flex;flex-wrap:wrap;gap:30px;margin-top:28px}.contact-details p{display:flex;flex-direction:column;gap:3px;margin:0;font-size:12px}.contact-details p span{color:var(--yellow);font-size:8px;letter-spacing:.16em}.contact-details a{color:#e0ddd4}.contact-mark{position:absolute;right:4%;top:30px;color:#f3f0e80a;font:800 clamp(65px,11vw,150px)/1 Manrope,sans-serif;letter-spacing:-.08em}.contact-mark span{color:#f4c90018}
+.footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:24px;padding-bottom:30px;color:#aaa89f;font-size:10px}.footer img{width:105px;height:35px;object-fit:contain;object-position:left center}.footer a{color:#d8d5cc}
+@media(max-width:700px){.wrap{width:calc(100% - 32px)}.header{min-height:72px;gap:10px}.brand img{width:140px;height:43px}.header nav{display:none}.header-social{font-size:11px}.hero{min-height:470px;padding-top:88px}h1{font-size:clamp(48px,12vw,72px)}.hero .actions{align-items:flex-start;flex-direction:column;gap:16px}.hero-bottom{padding-top:48px}.music-section{padding-top:30px;padding-bottom:55px}.section-heading{align-items:flex-start;flex-direction:column;gap:10px}.section-description{max-width:420px}.featured{grid-template-columns:1fr}.featured-cover{min-height:0;aspect-ratio:1.05}.featured-info{padding:25px 22px 28px}.song-grid{gap:10px}.song-card{padding:8px}.song-cover{aspect-ratio:.9}.song-details{margin:12px 2px 0}.song-details h3{font-size:16px}.song-label{font-size:8px}.small{margin-left:2px}.platforms-section{grid-template-columns:1fr;gap:24px;padding-bottom:60px}.contact-section{padding:28px 22px}.contact-details{flex-direction:column;gap:14px}.contact-mark{right:-4%;top:10px;font-size:68px}.footer{align-items:flex-start;flex-direction:column;gap:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+
+/* Edición visual: identidad MT, tarjetas de plataformas y aparición suave */
+.background{background:radial-gradient(ellipse at 78% 13%,#344640 0%,transparent 34%),linear-gradient(140deg,#1b2a30 0%,#20251f 50%,#111210 100%)}
+.brand-watermark{position:absolute;z-index:-1;top:120px;right:max(-20px,calc((100vw - 1180px)/2));font:800 clamp(180px,32vw,430px)/.8 Manrope,sans-serif;letter-spacing:-.13em;color:#f3f0e807;pointer-events:none;user-select:none}
+.hero{position:relative}.hero h1{text-shadow:0 10px 45px #00000025}.hero .intro{max-width:480px}
+.platform-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.platform-card{min-height:112px;position:relative;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;gap:12px;padding:17px 18px;background:linear-gradient(135deg,#242a26e8,#181a17e8);border:1px solid var(--line);overflow:hidden;transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.platform-card::after{content:"";position:absolute;width:90px;height:90px;border:1px solid #f3f0e80c;border-radius:50%;right:-25px;bottom:-42px;transition:transform .35s ease}
+.platform-card:hover,.platform-card:focus-visible{transform:translateY(-4px);border-color:#f4c90085;background:linear-gradient(135deg,#303a32,#1c1e19);outline:none}
+.platform-card:hover::after{transform:scale(1.45)}
+.platform-icon{display:block;width:27px;height:27px;color:var(--yellow)}.platform-icon svg{width:100%;height:100%;display:block}.platform-name{font-size:13px;font-weight:700;letter-spacing:.01em}.platform-arrow{position:absolute;right:16px;top:15px;color:var(--yellow);font-size:15px;transition:transform .2s}.platform-card:hover .platform-arrow{transform:translate(2px,-2px)}
+.featured,.song-card,.contact-section{transition:border-color .25s ease,transform .25s ease}.song-card:hover{border-color:#f4c90055}.featured-cover img,.song-cover img{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s}.featured:hover .featured-cover img,.song-cover:hover img{transform:scale(1.035);filter:saturate(1.06)}
+.contact-mark{font-size:clamp(85px,15vw,190px);transform:rotate(-5deg);right:3%;top:34px;color:#f3f0e80a}
+.reveal-ready .reveal-on-scroll{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.reveal-ready .reveal-on-scroll.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:700px){.brand-watermark{top:140px;right:-25px;font-size:220px}.platform-grid{gap:9px}.platform-card{min-height:102px;padding:14px}.platform-name{font-size:12px}.platform-arrow{right:12px;top:12px}}
+@media(prefers-reduced-motion:reduce){.reveal-ready .reveal-on-scroll,.reveal-ready .reveal-on-scroll.is-visible{opacity:1;transform:none;transition:none}.platform-card,.platform-card::after,.platform-arrow,.song-cover img,.featured-cover img{transition:none!important}}
+
+/* Ajustes de adaptación para tabletas y celulares */
+@media (min-width:701px) and (max-width:980px){
+  .wrap{width:calc(100% - 48px)}
+  .header{gap:18px}
+  .brand img{width:160px}
+  .header nav{gap:16px}
+  .hero{min-height:470px;padding-top:88px}
+  .featured{grid-template-columns:.95fr 1.05fr}
+  .featured-cover{min-height:0;aspect-ratio:1.7}
+  .song-cover{aspect-ratio:1.65}
+  .featured-info{padding:28px}
+  .platforms-section{gap:32px}
+  .platform-card{min-height:104px;padding:15px}
+  .contact-section{padding:40px}
+}
+@media(max-width:700px){
+  html{scroll-padding-top:18px}
+  .wrap{width:calc(100% - 36px)}
+  .header{min-height:68px;gap:8px}
+  .brand img{width:128px;height:40px}
+  .header-social{font-size:10px;white-space:nowrap;padding:10px 0 10px 8px}
+  .hero{min-height:0;padding-top:72px;padding-bottom:36px}
+  h1{font-size:clamp(44px,11.8vw,66px);line-height:1.03}
+  .hero .eyebrow{font-size:9px;letter-spacing:.13em}
+  .intro{font-size:14px;line-height:1.8;max-width:36ch}
+  .actions{width:100%;gap:16px;margin-top:22px}
+  .button{min-height:48px;padding:0 16px}
+  .hero-bottom{padding-top:45px;gap:9px}
+  .hero-bottom p{font-size:8px;letter-spacing:.11em}
+  .music-section{padding-top:26px;padding-bottom:48px}
+  .section-heading{margin-bottom:20px}
+  .section-heading h2,.platforms-section h2{font-size:clamp(27px,7.5vw,36px)}
+  .section-description{font-size:12px}
+  .featured-cover{aspect-ratio:1.8;max-height:220px}
+  .featured-info{padding:24px 18px 25px}
+  .featured-info h3{font-size:clamp(29px,8vw,38px)}
+  .featured-info .muted{font-size:13px}
+  .tags{flex-wrap:wrap;margin:16px 0 20px}
+  .song-grid{grid-template-columns:1fr;gap:12px;margin-top:14px}
+  .song-card{padding:10px;display:grid;grid-template-columns:minmax(94px,32%) minmax(0,1fr);grid-template-rows:auto 1fr;column-gap:14px;align-items:center}
+  .song-cover{grid-column:1;grid-row:1 / span 2;aspect-ratio:1;width:100%;align-self:center}
+  .song-cover img{display:block}
+  .song-details{grid-column:2;grid-row:1;align-self:end;margin:0 2px 0 0;gap:8px}
+  .song-details h3{font-size:clamp(16px,4.5vw,20px);line-height:1.2}
+  .song-details .number{flex-shrink:0}
+  .song-card .small{grid-column:2;grid-row:2;align-self:start;margin:7px 2px 0 0}
+  .song-label{font-size:9px}
+  .platforms-section{grid-template-columns:1fr;gap:20px;padding-top:10px;padding-bottom:48px}
+  .platform-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .platform-card{min-height:100px;padding:13px;gap:10px}
+  .platform-icon{width:25px;height:25px}
+  .platform-name{font-size:12px;overflow-wrap:anywhere}
+  .contact-section{min-height:280px;padding:27px 20px}
+  .contact-copy h2{font-size:clamp(39px,10vw,54px)}
+  .contact-copy>.muted{font-size:12px;max-width:32ch}
+  .contact-details a{overflow-wrap:anywhere}
+  .contact-mark{font-size:clamp(55px,15vw,85px);right:-7%;top:14px}
+  .footer{padding-top:20px;padding-bottom:24px;gap:12px}
+}
+@media(max-width:390px){
+  .wrap{width:calc(100% - 28px)}
+  .brand img{width:112px}
+  .header-social{font-size:9px}
+  .hero{padding-top:60px}
+  h1{font-size:43px}
+  .hero-bottom p{font-size:7px;letter-spacing:.08em}
+  .platform-grid{gap:8px}
+  .song-card{grid-template-columns:minmax(88px,30%) minmax(0,1fr);column-gap:11px}
+  .song-details h3{font-size:16px}
+  .platform-card{padding:11px;min-height:94px}
+  .contact-section{padding-inline:17px}
+}
+@media(hover:none){
+  .platform-card:hover,.button:hover{transform:none}
+  .featured:hover .featured-cover img,.song-cover:hover img{transform:none;filter:none}
+}
