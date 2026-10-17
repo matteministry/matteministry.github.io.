@@ -111,13 +111,3 @@
 .platform-arrow {
   display: none !important;
 }
-
-/* Ocultar iconos de flecha en las tarjetas */
-.platform-arrow,
-.platform-card::after,
-.platform-card a::after,
-.platform-card svg,
-.featured-arrow,
-a .arrow {
-  display: none !important;
-}
