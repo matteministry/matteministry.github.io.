@@ -105,3 +105,9 @@
   .platform-card:hover,.button:hover{transform:none}
   .featured:hover .featured-cover img,.song-cover:hover img{transform:none;filter:none}
 }
+
+
+/* Ocultar flechas diagonales */
+.platform-arrow {
+  display: none !important;
+}
